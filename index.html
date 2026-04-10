@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Umer | Data Analyst & Python Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">MU</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-btn" id="themeBtn">
+        <i class="fas fa-moon" id="themeIcon"></i>
+        <span id="themeLabel">Dark</span>
+      </button>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="wave-container">
+      <canvas id="waveCanvas"></canvas>
+    </div>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Open to Internships & Entry-Level Roles
+        </div>
+        <h1 class="hero-name">Muhammad<br><span class="accent-text">Umer</span></h1>
+        <div class="hero-subtitle">
+          <span class="line-accent"></span>
+          Data Analyst · Python Developer · ML Engineer
+        </div>
+        <p class="hero-desc">
+          Transforming raw data into actionable insights through machine learning, data pipelines, and smart visualizations. 20+ projects. Based in Lahore, Pakistan.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn-primary"><i class="fas fa-folder-open"></i> View Projects</a>
+          <a href="https://github.com/Umer-ML" target="_blank" class="btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/omar-naeem-a767762b1/" target="_blank" class="btn-outline"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hstat"><div class="hstat-num">20+</div><div class="hstat-label">Projects</div></div>
+          <div class="hstat-divider"></div>
+          <div class="hstat"><div class="hstat-num">3.47</div><div class="hstat-label">CGPA</div></div>
+          <div class="hstat-divider"></div>
+          <div class="hstat"><div class="hstat-num">6th</div><div class="hstat-label">Semester</div></div>
+        </div>
+      </div>
+
+      <!-- Profile Photo — put your image at: portfolio/profile.jpg -->
+      <div class="hero-photo-col">
+        <div class="photo-orbit">
+          <div class="orbit-ring ring-1"></div>
+          <div class="orbit-ring ring-2"></div>
+          <div class="orbit-dot dot-1"></div>
+          <div class="orbit-dot dot-2"></div>
+          <div class="orbit-dot dot-3"></div>
+          <div class="photo-circle" id="photoCircle" onclick="document.getElementById('photoInput').click()">
+            <!-- ✅ YOUR PHOTO: Place your image file as profile.jpg in the same folder as index.html -->
+            <img src="profile.jpg" alt="Muhammad Umer" id="profileImg" onerror="this.style.display='none';document.getElementById('photoFallback').style.display='flex'">
+            <div class="photo-fallback" id="photoFallback">
+              <i class="fas fa-user"></i>
+              <span>Add profile.jpg<br>to folder</span>
+            </div>
+            <div class="photo-overlay">
+              <i class="fas fa-camera"></i>
+              <span>Change Photo</span>
+            </div>
+          </div>
+        </div>
+        <input type="file" id="photoInput" accept="image/*" hidden>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="section section-alt" id="about">
+    <div class="s-inner">
+      <div class="s-label"><span></span>Who I Am</div>
+      <h2 class="s-title">About Me</h2>
+      <div class="about-grid fade-up">
+        <div class="about-text">
+          <p>I'm a 6th semester BS Information Technology student at Punjab University with a strong passion for data science and machine learning. With a CGPA of 3.47, I've built 20+ complete projects spanning the full data workflow — from cleaning raw datasets to deploying interactive applications.</p>
+          <p>My work includes predictive ML models, NLP classifiers, data dashboards, recommendation systems, and AI voice assistants. I thrive in collaborative settings and have led academic project teams, managing task distribution, timelines, and presentations.</p>
+          <p>I'm actively seeking an internship or entry-level role where I can apply my analytical skills to real-world data challenges and grow alongside experienced professionals.</p>
+          <div class="about-btns">
+            <a href="mailto:mu0602526@gmail.com" class="btn-primary"><i class="fas fa-envelope"></i> Email Me</a>
+            <a href="https://github.com/Umer-ML" target="_blank" class="btn-outline"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="acard"><div class="acard-num">20+</div><div class="acard-label">Projects Built</div></div>
+          <div class="acard"><div class="acard-num">3.47</div><div class="acard-label">CGPA / 4.00</div></div>
+          <div class="acard"><div class="acard-num">6</div><div class="acard-label">Semesters Done</div></div>
+          <div class="acard"><div class="acard-num">2+</div><div class="acard-label">Years Coding</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section class="section" id="skills">
+    <div class="s-inner">
+      <div class="s-label"><span></span>What I Know</div>
+      <h2 class="s-title">Skills & Technologies</h2>
+      <div class="skills-layout fade-up">
+
+        <div class="skills-left">
+          <div class="skill-group-title">Technical Proficiency</div>
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span class="skill-bar-name">Python</span><span class="skill-bar-pct">90%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="90"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span class="skill-bar-name">Pandas & NumPy</span><span class="skill-bar-pct">88%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="88"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span class="skill-bar-name">Scikit-learn & ML</span><span class="skill-bar-pct">82%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="82"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span class="skill-bar-name">Data Visualization</span><span class="skill-bar-pct">85%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span class="skill-bar-name">SQL (MySQL)</span><span class="skill-bar-pct">75%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="75"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span class="skill-bar-name">NLP & Text Analysis</span><span class="skill-bar-pct">78%</span></div>
+              <div class="skill-track"><div class="skill-fill" data-w="78"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-group-title" style="margin-top:36px">Tools & Platforms</div>
+          <div class="tools-grid">
+            <div class="tool-item"><i class="fab fa-github"></i><span>GitHub</span></div>
+            <div class="tool-item"><i class="fas fa-code"></i><span>VS Code</span></div>
+            <div class="tool-item"><i class="fas fa-book-open"></i><span>Jupyter</span></div>
+            <div class="tool-item"><i class="fab fa-slack"></i><span>Slack</span></div>
+            <div class="tool-item"><i class="fas fa-stream"></i><span>Streamlit</span></div>
+            <div class="tool-item"><i class="fas fa-tasks"></i><span>Agile</span></div>
+          </div>
+        </div>
+
+        <div class="skills-right">
+          <div class="skill-group-title">ML & Analytics Concepts</div>
+          <div class="chips-wrap">
+            <div class="chip">Regression</div>
+            <div class="chip">Classification</div>
+            <div class="chip">NLP (TF-IDF)</div>
+            <div class="chip">EDA</div>
+            <div class="chip">Feature Engineering</div>
+            <div class="chip">Cross-Validation</div>
+            <div class="chip">Recommendation Systems</div>
+            <div class="chip">Computer Vision</div>
+            <div class="chip">Model Deployment</div>
+          </div>
+
+          <div class="skill-group-title" style="margin-top:32px">Soft Skills</div>
+          <div class="soft-grid">
+            <div class="soft-item"><i class="fas fa-users"></i><span>Teamwork</span></div>
+            <div class="soft-item"><i class="fas fa-crown"></i><span>Leadership</span></div>
+            <div class="soft-item"><i class="fas fa-lightbulb"></i><span>Problem Solving</span></div>
+            <div class="soft-item"><i class="fas fa-comments"></i><span>Communication</span></div>
+            <div class="soft-item"><i class="fas fa-clock"></i><span>Time Management</span></div>
+            <div class="soft-item"><i class="fas fa-brain"></i><span>Critical Thinking</span></div>
+            <div class="soft-item"><i class="fas fa-bolt"></i><span>Adaptability</span></div>
+            <div class="soft-item"><i class="fas fa-search"></i><span>Attention to Detail</span></div>
+            <div class="soft-item"><i class="fas fa-chart-bar"></i><span>Data-Driven Thinking</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="section section-alt" id="projects">
+    <div class="s-inner">
+      <div class="s-label"><span></span>My Work</div>
+      <h2 class="s-title">Featured Projects</h2>
+      <p class="proj-hint">Hover over project image → opens GitHub. Click <strong>Add Image</strong> to upload your own screenshot.</p>
+      <div class="proj-grid" id="projGrid"></div>
+    </div>
+  </section>
+
+  <!-- ── LEADERSHIP ── -->
+  <section class="section" id="leadership">
+    <div class="s-inner">
+      <div class="s-label"><span></span>Experience</div>
+      <h2 class="s-title">Leadership</h2>
+      <div class="lead-card fade-up">
+        <div class="lead-icon-wrap">
+          <div class="lead-icon"><i class="fas fa-users"></i></div>
+          <div class="lead-line"></div>
+        </div>
+        <div class="lead-body">
+          <div class="lead-period">2024 — Present</div>
+          <div class="lead-title">Project Lead — Semester & Final Year Projects</div>
+          <div class="lead-org"><i class="fas fa-map-marker-alt"></i> Punjab University, Civil Lines Islamia College · Lahore</div>
+          <ul class="lead-points">
+            <li>Led a team of 3–4 students in designing, developing, and delivering data-driven semester projects on schedule</li>
+            <li>Coordinated task distribution, facilitated communication, and resolved blockers to keep progress on track</li>
+            <li>Presented technical findings to instructors, demonstrating clear verbal and written communication skills</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── EDUCATION ── -->
+  <section class="section section-alt" id="education">
+    <div class="s-inner">
+      <div class="s-label"><span></span>Academic Background</div>
+      <h2 class="s-title">Education</h2>
+      <div class="edu-timeline fade-up">
+        <div class="edu-item">
+          <div class="edu-left">
+            <div class="edu-dot"><i class="fas fa-graduation-cap"></i></div>
+            <div class="edu-connector"></div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-year">2023 — Present</div>
+            <div class="edu-degree">BS Information Technology</div>
+            <div class="edu-inst">Punjab University — Civil Lines Islamia College, Lahore</div>
+            <div class="edu-detail">6th Semester &nbsp;|&nbsp; CGPA: 3.47 / 4.00</div>
+            <div class="edu-badge"><i class="fas fa-star"></i> Currently Enrolled — Semester 6</div>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-left">
+            <div class="edu-dot"><i class="fas fa-school"></i></div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-year">2021 — 2023</div>
+            <div class="edu-degree">FSc Pre-Engineering</div>
+            <div class="edu-inst">Superior College, Lahore</div>
+            <div class="edu-detail">Physics · Mathematics · Computer Science</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section" id="contact">
+    <div class="s-inner">
+      <div class="s-label"><span></span>Get in Touch</div>
+      <h2 class="s-title">Contact Me</h2>
+      <div class="contact-grid fade-up">
+        <div class="contact-left">
+          <p class="contact-intro">I'm actively looking for internship and entry-level Data Analyst or Python Developer roles. If you'd like to discuss an opportunity or just connect — reach out.</p>
+          <div class="contact-items">
+            <a class="contact-item" href="mailto:mu0602526@gmail.com">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div><div class="ci-label">Email</div><div class="ci-val">mu0602526@gmail.com</div></div>
+              <i class="fas fa-arrow-right ci-arrow"></i>
+            </a>
+            <a class="contact-item" href="tel:+923296977936">
+              <div class="ci-icon"><i class="fas fa-phone"></i></div>
+              <div><div class="ci-label">Phone</div><div class="ci-val">+92 329 6977936</div></div>
+              <i class="fas fa-arrow-right ci-arrow"></i>
+            </a>
+            <a class="contact-item" href="https://github.com/Umer-ML" target="_blank">
+              <div class="ci-icon"><i class="fab fa-github"></i></div>
+              <div><div class="ci-label">GitHub</div><div class="ci-val">github.com/Umer-ML</div></div>
+              <i class="fas fa-arrow-right ci-arrow"></i>
+            </a>
+            <a class="contact-item" href="https://www.linkedin.com/in/omar-naeem-a767762b1/" target="_blank">
+              <div class="ci-icon"><i class="fab fa-linkedin"></i></div>
+              <div><div class="ci-label">LinkedIn</div><div class="ci-val">linkedin.com/in/omar-naeem-a767762b1</div></div>
+              <i class="fas fa-arrow-right ci-arrow"></i>
+            </a>
+            <a class="contact-item" href="https://wa.me/923296977936" target="_blank">
+              <div class="ci-icon"><i class="fab fa-whatsapp"></i></div>
+              <div><div class="ci-label">WhatsApp</div><div class="ci-val">+92 329 6977936</div></div>
+              <i class="fas fa-arrow-right ci-arrow"></i>
+            </a>
+          </div>
+        </div>
+        <div class="contact-form-box">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" placeholder="Your name" required>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="your@email.com" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Subject</label>
+              <input type="text" placeholder="What's this about?">
+            </div>
+            <div class="form-group">
+              <label>Message</label>
+              <textarea rows="5" placeholder="Your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn-primary btn-full"><i class="fas fa-paper-plane"></i> Send Message</button>
+            <div class="form-success" id="formSuccess"><i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">MU</div>
+      <p class="footer-text">© 2025 Muhammad Umer · Data Analyst & Python Developer · Lahore, Pakistan</p>
+      <div class="footer-links">
+        <a href="https://github.com/Umer-ML" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/omar-naeem-a767762b1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:mu0602526@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
